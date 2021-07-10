@@ -5,9 +5,13 @@ edition = "2018"
 license = "WTFPL"
 publish = false
 
+[features]
+no-entrypoint = []
+
 [dependencies]
 solana-program = "1.7.4"
 thiserror = "1.0.24"
+spl-token = {version = "3.1.1", features = ["no-entrypoint"]}
 
 [dev-dependencies]
 assert_matches = "1.4.0"

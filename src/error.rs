@@ -2,6 +2,8 @@ use thiserror::Error;
 
 use solana_program::program_error::ProgramError;
 
+use crate::{instruction::EscrowInstruction, error::EscrowError};
+
 #[derive(Error, Debug, Copy, Clone)]
 pub enum EscrowError {
     /// Invalid instruction
